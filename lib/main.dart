@@ -7,8 +7,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: "https://gbprvmqfffjuyosrelhy.supabase.co",
-    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdicHJ2bXFmZmZqdXlvc3JlbGh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAxODYyNzQsImV4cCI6MjA3NTc2MjI3NH0.Ro068qYCjVYe-bDbeAESmNnQOFNFTetDAKoj85mtWKE",
+    url: "",
+    anonKey: "",
   );
   runApp(
     ChangeNotifierProvider(
