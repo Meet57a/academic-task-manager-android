@@ -4,7 +4,7 @@ class TaskModel {
   int subject;
   String dueDate;
   String status;
-  String createdAt;
+  String created_at;
 
   TaskModel({
     required this.id,
@@ -12,18 +12,17 @@ class TaskModel {
     required this.subject,
     required this.dueDate,
     required this.status,
-    required this.createdAt,
+    required this.created_at,
   });
 
   factory TaskModel.fromMap(Map<String, dynamic> map) {
     return TaskModel(
       id: map['id'],
       title: map['title'],
-      
       subject: map['subject'],
       dueDate: map['dueDate'],
       status: map['status'],
-      createdAt: map['createdAt'],
+      created_at: map['created_at'] ?? map['createdAt'], // Handle both formats
     );
   }
 
@@ -34,7 +33,7 @@ class TaskModel {
       'subject': subject,
       'dueDate': dueDate,
       'status': status,
-      'createdAt': createdAt,
+      'createdAt': created_at,
     };
   }
 }
